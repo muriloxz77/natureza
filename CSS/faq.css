@@ -1,0 +1,40 @@
+h2{
+    font-size: 64px;
+    font-family: Playfair Display SC;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.perguntas{
+    color: var(--color-brown);
+    font-weight: 400;
+    font-size: 24px;
+    border-bottom: 1px solid #D8D8D8;
+    margin-bottom: 20px;
+}
+
+.perguntas, span{
+    font-size: 24px;
+}
+
+#faq{
+    height: 
+    1716.7px;
+    margin-left: 2rem;
+}
+
+#faq .respostas{
+    display: none;
+}
+
+#faq .respostas.active{
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    h2{
+        font-size: 1.5rem;
+    }
+}

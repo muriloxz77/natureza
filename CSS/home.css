@@ -1,0 +1,53 @@
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.subtitulo{
+    font-family: Playfair Display SC;
+    font-weight: 700;
+    font-size: 32px;
+    justify-content: flex-start;
+    color: var(--color-brown);
+}
+     
+.scroll-container{
+    width: 900px;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.main ::-webkit-scrollbar{
+    width: 12px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #2fa97c;
+}
+
+.image-list {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+
+
+
+.image-list li {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+  
+.conteudo{
+    display: block;
+    padding-left: 2rem;
+}
+
+.conteudo section{
+    display: none;
+}
+
+.conteudo section.active{
+    display: block;
+}

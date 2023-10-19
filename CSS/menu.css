@@ -1,0 +1,106 @@
+.header{
+    max-width: var(--width);
+    margin: 2rem 0 2rem auto;
+    background-color: var(--background-green);
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 10px ;
+    }
+
+    a{
+        color: var(--color-white);
+    }
+
+    #login{
+        color: var(--color-brown);
+    }
+
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu{
+    background-color: #000;
+    height: 44px;
+    width: 95px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu{
+    display: none;
+}
+
+
+#botao-login{
+    font-weight: 700;
+    background-color: #fff;
+    color: var(--color-brown);
+    height: 44px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu{
+        display: flex;
+    }
+
+    .js-list{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .js-list{
+        display: none;
+        animation: fadeOut .3s forwards;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+
+    .js-list.active{
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: var(--background-green);
+        z-index: 100;
+        animation: slideDownMenu .5s forwards;
+    }
+
+    .menu span.active{
+        animation: slideDownMenu .5s forwards;
+    }
+
+}
+
+@keyframes slideDownMenu {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
